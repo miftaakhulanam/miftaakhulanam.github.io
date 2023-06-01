@@ -1,0 +1,847 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu&display=swap");
+
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  background-color: #040b14;
+  color: #dedede;
+}
+
+.wrapper {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.navbar {
+  width: 100%;
+  height: 75px;
+  margin: 0 110px;
+  position: relative;
+}
+
+#home {
+  margin: 0 85px;
+}
+
+.logo img {
+  float: left;
+  width: 60px;
+  margin-top: 9px;
+}
+
+.menu {
+  float: right;
+}
+
+nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 80px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background: #040b14;
+  z-index: 1000;
+  border-bottom: 1px solid #2c2f3f;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #a8a9b4;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 20px 0px 20px;
+  text-decoration: none;
+  transition: transform 0.4s;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+  transition: all 0.3s ease-out;
+}
+
+nav #icon {
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 67px;
+  float: right;
+  margin: auto 2px;
+  cursor: pointer;
+  display: none;
+}
+
+section {
+  margin: auto;
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+#home img {
+  width: 40%;
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+#skill img {
+  width: 40%;
+}
+
+#home .kolom {
+  margin: auto;
+  display: inline-block;
+  z-index: 999;
+  position: relative;
+}
+
+@keyframes waving_hand {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#home .kolom .wave {
+  animation: waving_hand 2.5s infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+.kolom .deskripsi {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #37b3ed;
+}
+
+#courses {
+  padding: 0 100px;
+}
+
+#courses .kolom {
+  margin: auto;
+}
+
+#tutors {
+  margin: 0 85px;
+}
+
+#skill .deskripsi {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #37b3ed;
+}
+
+h2 {
+  font-family: "ubuntu", sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+  width: 100%;
+  line-height: 50px;
+}
+
+#skill h2 {
+  font-family: "ubuntu", sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+  line-height: 50px;
+}
+
+a.tbl-biru {
+  background-color: #37b3ed;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+a.tbl-biru:hover {
+  background-color: transparent;
+  border: 2px solid #37b3ed;
+  cursor: pointer;
+}
+
+a.tbl-pink {
+  background-color: #37b3ed;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+a.tbl-pink:hover {
+  background-color: transparent;
+  border: 2px solid #37b3ed;
+  cursor: pointer;
+}
+
+.fa-spinner {
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.active {
+  color: #ffffff;
+}
+
+p {
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+}
+
+#courses img {
+  width: 50%;
+}
+
+#skill {
+  padding: 50px 100px;
+}
+
+#skill img {
+  width: 40%;
+  height: 82%;
+  padding-top: 50px;
+}
+.mh-skills .mh-professional-skills {
+  color: #ffffff;
+  right: 0;
+}
+
+.mh-skills .mh-professional-skills h2 {
+  font-family: "ubuntu", sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+}
+
+.mh-professional-skills .deskripsi {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #37b3ed;
+  text-align: center;
+}
+
+.mh-professional-skills p {
+  text-align: center;
+}
+
+.each-skills {
+  padding: 30px;
+}
+
+.candidatos {
+  position: relative;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.candidatos .parcial {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  align-content: center;
+}
+
+.candidatos .parcial .info {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.candidatos .parcial .info .nome {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.9;
+  font-family: "Poppins", sans-serif;
+}
+
+.percentage-num {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Poppins", sans-serif;
+}
+
+.candidatos .parcial .progresbar {
+  position: relative;
+  width: 400px;
+  height: 7px;
+  margin: 30px 0 2px;
+  border-radius: 10px;
+  background: #2c2f3f;
+}
+
+.candidatos .parcial .percentagem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 7px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #37b3ed;
+  transition: 3s all;
+  animation-duration: 3s;
+  animation-name: animationprogress;
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes animationprogress {
+  from {
+    width: 0;
+  }
+}
+
+.tengah {
+  text-align: center;
+  width: 100%;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.card {
+  height: 395px;
+  width: 335px;
+  padding: 20px 35px;
+  background: #2c2f3f;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card i {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 25px 0px;
+  color: #37b3ed;
+}
+
+h5 {
+  color: white;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.pra p {
+  color: white;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+
+.card .button {
+  background-color: #37b3ed;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.card .button:hover {
+  background-color: transparent;
+  border: 2px solid #37b3ed;
+  cursor: pointer;
+}
+
+#contact {
+  padding: 50px 100px;
+  background: #2c2f3f;
+}
+
+#body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: #2c2f3f;
+}
+
+.animasi a {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+.animasi .button {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #040b14;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+}
+
+.animasi .button .icon {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 40px;
+  transition: all 0.3s ease-out;
+}
+
+.animasi .button .icon i {
+  font-size: 20px;
+  line-height: 41px;
+  transition: all 0.3s ease-out;
+}
+
+.animasi .button:hover {
+  width: 150px;
+}
+
+.animasi .button:nth-child(1):hover .icon {
+  background: #37b3ed;
+}
+.animasi .button:nth-child(2):hover .icon {
+  background: #37b3ed;
+}
+.animasi .button:nth-child(3):hover .icon {
+  background: #37b3ed;
+}
+.animasi .button:nth-child(4):hover .icon {
+  background: #37b3ed;
+}
+.animasi .button:nth-child(5):hover .icon {
+  background: #37b3ed;
+}
+
+.animasi .button:hover .icon {
+  color: #37b3ed;
+}
+
+.animasi .button:hover .icon i {
+  color: #ffffff;
+}
+
+.animasi .button span {
+  font-size: 15px;
+  font-weight: 350;
+  line-height: 25px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+
+.animasi .button:nth-child(1)span {
+  color: #37b3ed;
+}
+.animasi .button:nth-child(2)span {
+  color: #37b3ed;
+}
+.animasi .button:nth-child(3)span {
+  color: #37b3ed;
+}
+.animasi .button:nth-child(4)span {
+  color: #37b3ed;
+}
+.animasi .button:nth-child(5)span {
+  color: #37b3ed;
+}
+
+.footer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.footer-section {
+  width: 230px;
+  margin: 30px auto;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #37b3ed;
+  width: 100%;
+  line-height: 50px;
+}
+
+.footer-section a {
+  color: #dedede;
+}
+
+.footer-section a:hover {
+  color: #37b3ed;
+  text-decoration: underline;
+}
+
+.footer-section p {
+  padding: 0;
+}
+
+#copyright {
+  text-align: center;
+  width: 100%;
+  padding: 2px 0px 25px 0px;
+  background: #2c2f3f;
+}
+
+#copyright b {
+  color: #37b3ed;
+}
+
+.my_bttn {
+  height: 45px;
+  width: 45px;
+  background-color: #37b3ed;
+  border: none;
+  color: white;
+  font-size: 20px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50% 10% 50% 50%;
+  cursor: pointer;
+  outline: none;
+  display: none;
+}
+
+.my_bttn:hover {
+  transform: scale(1) translateY(-5px);
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    width: 100%;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .kolom .deskripsi {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  #skill .mh-professional-skills .deskripsi {
+    font-size: 16px;
+  }
+
+  #skill .mh-professional-skills h2 {
+    font-size: 30px;
+  }
+
+  #contact .footer-section h3 {
+    font-size: 23px;
+  }
+
+  #contact .wrapper .footer .footer-section a {
+    size: 19px;
+  }
+
+  #contact .wrapper .footer .footer-section tr td {
+    size: 19px;
+  }
+
+  #home {
+    text-align: center;
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  #home .kolom {
+    width: 360px;
+  }
+
+  #home img {
+    width: 80%;
+    display: inline-block;
+    margin: 10px auto;
+  }
+
+  #courses {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  #courses img {
+    width: 80%;
+    display: inline-block;
+  }
+
+  #tutors {
+    text-align: center;
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  p .tbl-biru {
+    display: none;
+  }
+
+  .card {
+    display: inline-block;
+  }
+
+  .br {
+    display: none;
+  }
+
+  #skill {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  #skill p {
+    padding: 0 10px;
+  }
+
+  #skill img {
+    width: 70%;
+    display: inline-block;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 65px;
+    position: static;
+    margin: 0 30px;
+  }
+
+  .wrapper .logo {
+    font-size: 32px;
+    width: 40%;
+    margin: 5px auto;
+  }
+
+  .logo img {
+    display: inline-block;
+    width: 48px;
+  }
+
+  nav .menu {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    background: #2c2f3f;
+    top: 0;
+    right: -100%;
+    padding-top: 60px;
+    text-align: center;
+    transition: all 0.5s;
+    scroll-behavior: auto;
+    border: 2px solid #040b14;
+  }
+  nav li {
+    display: block;
+    margin: 2px 0;
+    line-height: 50px;
+    width: 100%;
+    height: 50px;
+  }
+
+  nav li:hover {
+    background-color: #040b14;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    font-weight: normal;
+    width: 100%;
+    height: 100%;
+  }
+
+  nav ul li a:hover {
+    font-size: 20px;
+    transition: none;
+  }
+
+  nav #icon {
+    display: block;
+    position: relative;
+  }
+
+  #icon i.show:before {
+    content: "\f00d";
+  }
+
+  nav ul.show {
+    right: 0;
+    margin-right: 1px;
+  }
+
+  section {
+    display: block;
+  }
+
+  section img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .box {
+    display: block;
+  }
+
+  .card {
+    height: 250px;
+    width: 250px;
+    padding: 15px 15px;
+    margin: 5px;
+  }
+
+  .card i {
+    font-size: 30px;
+    margin: 10px 10px;
+  }
+
+  h5 {
+    font-size: 18px;
+    margin-bottom: 7px;
+  }
+
+  .pra p {
+    font-size: 15px;
+    margin-bottom: none;
+  }
+
+  .card .button {
+    display: none;
+  }
+
+  .each-skills {
+    width: 330px;
+    margin: 0;
+    padding: none;
+    align-items: center;
+    display: inline-block;
+    left: 0;
+  }
+
+  .candidatos .parcial .progresbar {
+    width: 330px;
+    padding: 0;
+  }
+
+  .percentage-num {
+    right: 0px;
+  }
+
+  .kartu-tutor {
+    width: 55%;
+  }
+
+  .kartu-partner {
+    width: 50%;
+  }
+
+  #contact {
+    padding: 5px 20px;
+    margin: 0;
+  }
+
+  .footer {
+    display: block;
+  }
+
+  .footer-section a {
+    display: block;
+    line-height: 5px;
+  }
+}
